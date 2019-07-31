@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>TwilioSF__BulkMessage__c.TwilioSF__Campaign__c</field>
+    </columns>
+    <columns>
+        <field>TwilioSF__BulkMessage__c.TwilioSF__Body__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>TwilioSF__BulkMessage__c.TwilioSF__Messages_Failed__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>TwilioSF__BulkMessage__c.TwilioSF__Messages_Delivered__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Bulk Messages Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$TwilioSF__BulkMessage__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>TwilioSF__BulkMessage__c.TwilioSF__Future_Send_Date_Time__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>
