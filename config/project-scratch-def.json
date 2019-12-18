@@ -1,10 +1,11 @@
 {
-  "orgName": "shane.mclaughlin Company",
+  "orgName": "Trailblazer Apps",
+  "adminEmail": "shane@mailinator.com",
+  "description": "texting app",
   "edition": "Developer",
-  "features": [],
   "settings": {
-    "orgPreferenceSettings": {
-      "s1DesktopEnabled": true
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
     }
   }
 }
